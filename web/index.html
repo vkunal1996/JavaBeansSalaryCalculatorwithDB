@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Admin Panel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #body
+            {
+                
+                height:660px;
+                width:1340px;
+                background-color: aqua;
+                background-image:url("images/mainBackground.jpg");
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #mainheading
+            {
+                color:darkblue;
+                font-family: fantasy;
+                font-size: 50px;
+            }
+            th.header
+            {
+                text-align: left;
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+            #loginbutton
+            {
+                width:90px;
+                background: cyan;
+                font-size:30px;
+                border-color: cyan;
+            }
+        </style>
+    </head>
+    <body id="body">
+        <form action="AdminPanel.jsp" method="post">
+        <div>
+            <center><h1 id="mainheading">Admin Panel</h1></center>
+            <div id="tableContent">
+                    <center>
+                        <table cellspacing='4'>
+                            <tr>
+                                <th class ="header">Username :</th>
+                                <td><input type="text" name="user" size=20></td>
+                            </tr>
+                            <tr>
+                                <th class ="header">Password :</th>
+                                <td><input type="password" name="password" size=20></td>
+                            </tr>
+                            <tr>
+                                <td align="center" colspan="2"><input type="submit" value="Login" id="loginbutton"></td>
+                            </tr>
+                        </table>
+                    </center>
+            </div>
+        </div>
+        </form>      
+    </body>
+</html>

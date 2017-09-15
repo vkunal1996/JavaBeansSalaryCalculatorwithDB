@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Salary Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #body
+            {
+                
+                height:660px;
+                width:1340px;
+                background-color: aqua;
+                background-image: url(images/mainBackground.jpg);
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #mainheading
+            {
+                color:darkblue;
+                font-family: fantasy;
+                font-size: 50px;
+            }
+            th.header
+            {
+                text-align: left;
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    
+    <body id="body">
+    <form>
+            <div>
+                
+                
+                <center>
+                    <h1 id="mainheading">Employee Calculator</h1>
+                </center>
+                
+                <div id="tableContent">
+                    <center>
+                        <table cellspacing='4'>
+                            <tr>
+                                <th class ="header">Employee Id :</th>
+                                <td><input type="text" name="id" size=20 required></td>
+                            </tr>
+                            <tr>
+                                <th class ="header">Employee Name :</th>
+                                <td><input type="text" name="name" size=20 required></td>
+                            </tr>
+                            <tr>
+                                <th class ="header">Employee Contact :</th>
+                                <td><input type="text" name="contact" size=20 required></td>
+                            </tr>
+                            <tr>
+                                <th class ="header">Employee Designation :</th>
+                                <td><select name="designation" style="width: 175px;">
+                                
+                                    <option value="Manager" selected>Manager</option>
+                                    <option value="Accountant">Accountant</option>
+                                    <option value="Clerk">Clerk</option>
+                                    <option value="SalesMan">SalesMan</option>
+                                    <option value="Analyst">Analyst</option>
+                                </select></td>
+                                
+                            </tr>
+                            <tr>
+                                <th class ="header">Employee Email :</th>
+                                <td><input type="text" name="email" size=20 required></td>
+                            </tr>
+                            <tr>
+                                <th class ="header">Employee Basic Salary :</th>
+                                <td><input type="text" name="salary" size=20 required></td>
+                            </tr>
+                            <tr>
+                                <th class ="header">Employee HRA :</th>
+                                <td><input type="text" name="hra" size=20 required></td>
+                            </tr>
+                            <tr>
+                                <th class ="header">Employee TA :</th>
+                                <td><input type="text" name="ta" size=20 required></td>
+                            </tr>
+                            <tr>
+                                <th class ="header">Employee DA :</th>
+                                <td><input type="text" name="da" size=20 required></td>
+                            </tr>
+                            <tr>
+                                <th class ="header">Employee IT :</th>
+                                <td><input type="text" name="it" size=20></td>
+                            </tr>
+                            <tr>
+                                <th class ="header">Employee PF :</th>
+                                <td><input type="text" name="pf" size=20></td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <input type="submit" value="With TDS" formaction="Calling.jsp">
+                                </td>
+                                <td align="center">
+                                    <input type="submit" value="Without TDS" formaction="Another.jsp">
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                </div>
+        </div>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Details</title>
+        <style>
+            #body
+            {
+                
+                height:660px;
+                width:1340px;
+                background-color: aqua;
+                background-image:url("images/mainBackground.jpg");
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #mainheading
+            {
+                color:darkblue;
+                font-family: fantasy;
+                font-size: 50px;
+            }
+            th.header
+            {
+                text-align: left;
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+            #button
+            {
+                width:90px;
+                background: cyan;
+
+                border-color: cyan;
+            }
+       </style>
+    </head>
+    <body id="body">
+    <center>
+        <h1 id="mainheading">Employee Details</h1>
+        <form method="post" >
+            <select name="designation" style="width:175px;" >
+                <option value="Manager" selected>Manager</option>
+                <option value="Accountant">Accountant</option>
+                <option value="Clerk">Clerk</option>
+                <option value="SalesMan">SalesMan</option>
+                <option value="Analyst">Analyst</option>
+            </select>
+            
+            <input type="Submit" value="Show Details" formaction="Details.jsp"/>
+        </form>
+    </center>
+    </body>
+</html>
